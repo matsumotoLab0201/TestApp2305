@@ -54,4 +54,5 @@ struct AnotherChildView: View {
 class SharedData: ObservableObject {
     @Published var sharedVariable: String = "Hello"
     @Published var selectedColorCodes: Set<String> = ["#f0e68c"]
+    @Published var selectedOption: String = "https://raw.githubusercontent.com/matumotokohei/rentMock/master/iOS_Json/iOS-1K.json"
 }
