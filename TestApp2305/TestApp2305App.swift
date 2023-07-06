@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct TestApp2305App: App {
     @StateObject var sharedData = SharedData()
+    @Environment(\.colorScheme) var colorScheme
         
         var body: some Scene {
             WindowGroup {
                 ContentView()
                     .environmentObject(sharedData)
+                    .preferredColorScheme(.dark) // ダークモードに設定
             }
         }
 }
